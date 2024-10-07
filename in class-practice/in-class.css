@@ -1,0 +1,76 @@
+body{
+    position: relative;
+    height: 100vh;
+}
+/* css style for header */
+header{
+    justify-content: center;
+    text-align: center;
+    display :flex;
+    background-color: #F0F0F0;
+    padding: 10px;
+    z-index: 1000; /*Challenge2: use z-index to control the stacking order of elements.*/
+}
+/*css style for main and article*/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1; /*Challenge2: use z-index to control the stacking order of elements.*/
+}
+article {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #E0E0E0;
+    padding: 15px;
+}
+/*css style for aside to make it in the right of the main content.*/
+aside {
+    width: 30%;
+    background-color: #D0D0D0;
+    padding: 15px;
+    margin: 20px auto;
+    z-index: 2; /*Challenge2: use z-index to control the stacking order of elements.*/
+}
+/*css style to footer to make it in the bottom of the viewport*/
+footer{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50px;
+    background-color: #C0C0C0;
+    padding: 10px;
+}
+/*Challenge1:  add a sticky navigation bar to the page (using position: sticky).*/
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /*Challenge2: use z-index to control the stacking order of elements.*/
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+nav ul li a:hover {
+    background-color: #e31313;
+}
